@@ -4,14 +4,16 @@ import Letter from './Letter'
 
 function Word() {
 
-    const word = ['C', 'H', 'A', 'S', 'E']
+    //each word needs to be passed an empty array to start
+
+    const word = ['', '', '', '', '']
 
     function createLetters() {
         return word.map(letter => <Letter value={letter} />)
     }
 
     const letterElements = createLetters()
-    
+
   return (
     <div className='word--container'>
         {letterElements}
