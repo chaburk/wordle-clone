@@ -1,26 +1,20 @@
 import React from 'react'
 import './Word.css'
+import Letter from './Letter'
 
 function Word() {
 
+    const word = ['C', 'H', 'A', 'S', 'E']
+
+    function createLetters() {
+        return word.map(letter => <Letter value={letter} />)
+    }
+
+    const letterElements = createLetters()
+    
   return (
     <div className='word--container'>
-        <div className='word--letter'>
-            <h1>C</h1>
-        </div>
-        <div className='word--letter'>
-            <h1>H</h1>
-        </div>
-        <div className='word--letter'>
-            <h1>A</h1>
-        </div>
-        <div className='word--letter'>
-            <h1>S</h1>
-        </div>
-        <div className='word--letter'>
-            <h1>E</h1>
-        </div>
-
+        {letterElements}
     </div>
   )
 }
