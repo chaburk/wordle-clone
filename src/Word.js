@@ -2,9 +2,7 @@ import React from 'react'
 import './Word.css'
 
 function Word() {
-    //will make a grid of words?
-    //and each word will be five divs?
-    //or do i make a grid of letters
+
   return (
     <div className='word--container'>
         <div className='word--letter'>
@@ -28,3 +26,11 @@ function Word() {
 }
 
 export default Word
+
+    //will make a grid of words?
+    //and each word will be five divs?
+    //or do i make a grid of letters
+    //might need to make a letter component if im going to copy all of this code
+    //how do i update the typing
+    //use effect whenever word is updated then set array 
+    //event listener with updates when array is less than five letters and 

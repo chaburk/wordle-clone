@@ -8,6 +8,11 @@ function App() {
       <Header />
       <main className='word-container'>
         <Word />
+        <Word />
+        <Word />
+        <Word />
+        <Word />
+        <Word />
       </main>
       
       {/*Keyboard*/}
